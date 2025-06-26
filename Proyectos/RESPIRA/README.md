@@ -29,7 +29,10 @@ En este conjunto, no existe comandado, pero pines configurados como salida puede
 
 
 ## 2 Placa de desarrollo
-![image](https://github.com/user-attachments/assets/1d48ffa7-dc5e-4dd4-abb3-e3030c519a64)
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image](resources/images/04_Placa_Desarrollo_2.JPG)       |Placa de adaptación para permitir el atornillado en bornas       |
+
 El microcontrolador muestra 38 pines macho para la conexión de dispositivos mediante, por ejemplo, conectores Dupont.
 Con el fin de evitar la liberación inesperada del cableado, resulta más eficaz utilizar bornas atornilladas sobre el cableado.
 Para ello se utiliza esta placa de desarrollo, en la cual se encastra el microcontrolador insertando sus pines en los zócalos adecuados.
