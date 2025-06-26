@@ -13,7 +13,7 @@ Wifimanager
 # LISTADO DE COMPONENTES HARDWARE
   ## 1 MICROCONTROLADOR ESP32
 
-  ![ESP32](resources/images/03_material_ESP32.png)|                                       |
+  ![ESP32](resources/images/03_material_ESP32.JPEG)|                                       |
 
 
 Constituye el cerebro de la estación meteorológica.
