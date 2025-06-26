@@ -81,7 +81,7 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 ## 7 Soporte de componentes
 |                         |                      |
 |------------------------------|----------------------------------|
-|  ![image](resources/images/09_Soporte.png)    ![image](resources/images/09_Soporte_reverso.png)  
+|  ![image](resources/images/09_Soporte.png)    ![image](resources/images/09b_Soporte_reverso.png)  
 |  Insertado en la carcasa y con perforaciones para atornillar los componentes.  Permite fijar el conjunto de manera sólida   |
 
 
