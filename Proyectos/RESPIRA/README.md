@@ -74,7 +74,7 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 ## 6 Carcasa principal
 |                         |                      |
 |------------------------------|----------------------------------|
-| ![image]()       |    Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior   |
+| ![image](![image](resources/images/08_Carcasa.png) )       |    Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior   |
 
 
 
