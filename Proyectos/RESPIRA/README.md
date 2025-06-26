@@ -52,7 +52,7 @@ Cada borna para atornillar muestra un texto serigrafiado que se corresponde con 
 ## 4 Sensor de gases
 |                         |                      |
 |------------------------------|----------------------------------|
-| ![image]()       |  Permite detectar en el ambiente gases como CO2, CO, NO2.     |
+|  ![image](resources/images/06_Gases.png)       |  Permite detectar en el ambiente gases como CO2, CO, NO2.     |
 
 
 
