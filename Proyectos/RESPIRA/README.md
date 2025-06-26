@@ -26,7 +26,7 @@ Además de pines con funciones específicas, existen pines analógicos, digitale
 
 Estas entradas pueden llegar desde interruptores, pulsadores, o sensores. 
 
-En este conjunto, no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.   
+En este conjunto no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.   
 
 
 ## 2 Placa de desarrollo
