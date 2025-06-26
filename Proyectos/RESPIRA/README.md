@@ -11,12 +11,11 @@ Wifimanager
 
 
 # LISTADO DE COMPONENTES HARDWARE
-  ## 1 MICROCONTROLADOR ESP32
-
-  ![ESP32](resources/images/03_material_ESP32.JPEG)|                                       |
 
 
-Constituye el cerebro de la estación meteorológica.
+| Imagen                        | Descripción                     |
+|------------------------------|----------------------------------|
+| ![](resources/images/03_material_ESP32.JPEG)        |Constituye el cerebro de la estación meteorológica.
 Contiene la programación específica de la estación, y recibe los datos de los sensores, que adapta y prepara para su envío a la plataforma
 
 Los sensores son cableados a los pines adecuados que por programa son asociados a las variables a transmitir.|
@@ -24,11 +23,7 @@ Los sensores son cableados a los pines adecuados que por programa son asociados 
 El chip muestra 38 pines con diferentes funciones. Los pines GND y VCC 5V, VCC 3.3v proporcionan la alimentación para los sensores.
 Además de pines con funciones específicas, existen pines analógicos, digitales de entrada, salida, o configurables como entrada o salida por programa.
 La programación "escucha" los pines de entrada, que pueden proporcionar valores digitales 1 o 0 (HIGH/LOW), o analógicos. Estas entradas pueden llegar desde interruptores, pulsadores, o sensores.
-En este conjunto, no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.
-
-| Imagen                        | Descripción                     |
-|------------------------------|----------------------------------|
-| ![](resources/images/03_material_ESP32.JPEG)        | Texto descriptivo 1             |
+En este conjunto, no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.           |
 | ![](ruta/imagen2.png)        | Texto descriptivo 2             |
 | ![](ruta/imagen3.png)        | Texto descriptivo 3             |
 | ![](ruta/imagen4.png)        | Texto descriptivo 4             |
