@@ -47,7 +47,7 @@ Cada borna para atornillar muestra un texto serigrafiado que se corresponde con 
 ## 3 Sensor de Temperatura y Humedad
 |                         |                      |
 |------------------------------|----------------------------------|
-| ![image]()       |  El sensor DHT22 es muy conocido en el mundo maker, permite obtener con facilidad ambos valores ambientales. Se presenta con un cable externo     |
+| ![image](resources/images/05_DHT22_1.png)       |  El sensor DHT22 es muy conocido en el mundo maker, permite obtener con facilidad ambos valores ambientales. Se presenta con un cable externo     |
 
 ## 4 Sensor de gases
 |                         |                      |
