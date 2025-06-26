@@ -44,32 +44,40 @@ Cada borna para atornillar muestra un texto serigrafiado que se corresponde con 
 > En algunas placas de desarrollo aparece como GND una borna incorrectamente. En realidad se corresponde con CMD en el chip, y NO debe utilizarse como Ground.
 
 ## 3 Sensor de Temperatura y Humedad
-El sensor DHT22 es muy conocido en el mundo maker, permite obtener con facilidad ambos valores ambientales
-![image](https://github.com/user-attachments/assets/09eeee57-3c8b-4687-8c7b-58af61378b26)
-Se presenta con un cable externo
-![image](https://github.com/user-attachments/assets/2d4f66f5-2313-450a-b574-206410aef585)
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image]()       |  El sensor DHT22 es muy conocido en el mundo maker, permite obtener con facilidad ambos valores ambientales. Se presenta con un cable externo     |
 
 ## 4 Sensor de gases
-Permite detectar en el ambiente gases como CO2, CO, NO2.
-![image](https://github.com/user-attachments/assets/dc86da05-3a39-435c-88b3-80d9a6f4149b)
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image]()       |  Permite detectar en el ambiente gases como CO2, CO, NO2.     |
+
+
+
 
 ## 5 Sensor de partículas
-Proporciona información PM (Particule Matter) acerca del tamaño de las partículas en suspensión en el aire.
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image]()       |    Proporciona información PM (Particule Matter) acerca del tamaño de las partículas en suspensión en el aire.   |
+
 Las partículas en suspensión (total de partículas suspendidas: TPS) (o material particulado (PM)) son mezclas de partículas sólidas o líquidas dispersas en la atmósfera y que se caracterizan por su pequeño tamaño que hace que permanezcan en suspensión estacionaria en el aire durante periodos largos de tiempo, que pueden variar de unas pocas horas a varios meses e incluso años. Su presencia en el aire puede ser debida a causas naturales (huracanes, actividad volcánica, etcétera) o de origen antropogénico, es decir, como consecuencia de la actividad humana (explotación de canteras, quema de combustibles, tráfico, entre otras). Fuente: https://es.wikipedia.org/wiki/Part%C3%ADculas_en_suspensi%C3%B3n
 La medición de la presencia de partículas se realiza en función de su diámetro expresado en micrómetros, usando denominaciones como PM1, PM2.5, PM10.
-![image](https://github.com/user-attachments/assets/c25f806e-d207-4de8-9927-5a44b74a2a08) Fuente: https://es.wikipedia.org/wiki/Part%C3%ADculas_en_suspensi%C3%B3n
 
 El sensor de partículas se presenta en un formato compacto con 5 cables.
-![image](https://github.com/user-attachments/assets/45b559d0-d8c0-4411-93e1-3957b0d094da)
 
 ## 6 Carcasa principal
-Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior
-![image](https://github.com/user-attachments/assets/40e3e204-8b91-42a3-9381-287f89e39e4e)
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image]()       |    Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior   |
+
+
 
 ## 7 Soporte de componentes
-Insertado en la carcasa y con agujeros para atornillar los componentes.
-![image](https://github.com/user-attachments/assets/3c88b5bf-fd10-4b14-8d3b-43e5acadc673)
-![image](https://github.com/user-attachments/assets/57abff63-0f52-4df1-961a-5e94543dfbb8)
+|                         |                      |
+|------------------------------|----------------------------------|
+| ![image]()       |  Insertado en la carcasa y con perforaciones para atornillar los componentes.  Permite fijar el conjunto de manera sólida   |
+
 
 
 
