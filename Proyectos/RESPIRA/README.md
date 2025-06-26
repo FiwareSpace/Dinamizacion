@@ -1,9 +1,10 @@
 Cortar los cables
+
 Wifimanager
 
 ![Texto alternativo](resources/images/01_Encabezado_titulo.png)
 
-# Respira
+
 # INSTRUCCIONES DE MONTAJE, PROGRAMACIÓN, PUESTA EN MARCHA Y ACTUALIZACIÓN
 
 ![Texto alternativo](resources/images/02_Portada.png)
