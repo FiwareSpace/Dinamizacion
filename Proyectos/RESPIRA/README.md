@@ -6,7 +6,7 @@ Wifimanager
 # Respira
 # INSTRUCCIONES DE MONTAJE, PROGRAMACIÓN, PUESTA EN MARCHA Y ACTUALIZACIÓN
 
-![Texto alternativo](resources/images/02_Portada.png
+![Texto alternativo](resources/images/02_Portada.png)
 # ¿Qué es RESPIRA?
 
 
