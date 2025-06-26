@@ -20,8 +20,11 @@ Wifimanager
 Los sensores son cableados a los pines adecuados que por programa son asociados a las variables a transmitir.
 
 El chip muestra 38 pines con diferentes funciones. Los pines GND y VCC 5V, VCC 3.3v proporcionan la alimentación para los sensores.
+
 Además de pines con funciones específicas, existen pines analógicos, digitales de entrada, salida, o configurables como entrada o salida por programa. La programación "escucha" los pines de entrada, que pueden proporcionar valores digitales 1 o 0 (HIGH/LOW), o analógicos.
+
 Estas entradas pueden llegar desde interruptores, pulsadores, o sensores. 
+
 En este conjunto, no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.   
 
 
