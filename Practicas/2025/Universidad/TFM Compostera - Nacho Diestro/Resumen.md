@@ -8,5 +8,9 @@ Profesor Tutor: Antonio Gordillo
 
 Dinamizador FIWARE Space: Jorge Osuna
 
+Inicio:
+
+Fin: Junio 2025
+
 #1 Concepto:
 Desarrollo de una compostera ciudadana dotada de sensores.
