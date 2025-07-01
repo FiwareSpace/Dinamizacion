@@ -14,7 +14,7 @@ Participantes:
   
   Tomás Rodríguez Hermoso
 
-##1 Proyecto:
+#1 Proyecto:
 
 Proyecto en común en el cual cada participante ha desarrollado una parte.
 Como primera tarea se les propuso evaluar tres aplicaciones low code para inteligencia artificial.
