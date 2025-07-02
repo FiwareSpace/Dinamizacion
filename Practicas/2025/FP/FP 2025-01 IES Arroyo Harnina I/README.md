@@ -15,7 +15,8 @@ Juan Hernández Belloso
 
 
 ## Proyecto / Actividades
-- Reparación Maqueta Parking
-- Análisis funcionamiento Maqueta Depuradora
+- Reparación Maqueta Parking. Arduino, sensórica
+- Análisis funcionamiento Maqueta Depuradora. Arduino, sensórica
+- Tienda de Moda. Front-end. Framework Angular, API Python
 
 
