@@ -4,8 +4,10 @@ IES Arroyo Harnina
 Prácticas de empresa
 11/04/25 - 16/06/25
 
-Participantes:
+### Participantes:
 Juan Hernández Belloso
+
+
 ## Proyecto / Actividades:
 #### Reparación Maqueta Parking
 
