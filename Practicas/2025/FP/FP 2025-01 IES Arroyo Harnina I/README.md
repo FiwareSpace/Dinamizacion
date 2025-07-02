@@ -8,10 +8,10 @@ Prácticas de empresa
 Juan Hernández Belloso
 
 ### Formación recibida:
-FIWARE
-MQTT
-Node-Red
-WAMP
+- FIWARE
+- MQTT
+- Node-Red
+- WAMP
 
 
 ## Proyecto / Actividades:
