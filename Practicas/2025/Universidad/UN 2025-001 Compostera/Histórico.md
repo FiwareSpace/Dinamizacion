@@ -1,4 +1,4 @@
-20/02/25
+#### 20/02/25
 El tfm sigue avanzando con Nacho Diestro. En paralelo, se sugiere a Antonio Gordillo aterrizar el concepto en composteras en la EPCC y al mismo tiempo en Diputación.
 Se plantea reunión en Extremadura Tech (Antonio Gordillo, Antonio Hernández, Jorge Osuna), en la cual se aclaran algunos conceptos. Aprovechando el evento, se produce reunión con Jaime Gragera donde se propone la idea siguiendo un modelo similar a RESPIRA, bien centrada en lo educativo (que profesores tech con equipos de estudiantes lo monten), lo empresarial (ofrecer un modelo para que las empresas lo fabriquen, o vayan a un reto) o lo municipal. O todo junto y quizá con evento personalizado (Compost Day) o Arduino Week.  Se podría aprovechar el presupuesto (o parte) del Reto para crear un gran proyecto.
 
@@ -9,7 +9,7 @@ Comenta que lo difundirá adecuadamente.
 
 Se dispone de información similar en la web bajo el apartado FIWARE Space Academy.
 
-10/03/25
+#### 10/03/25
 Nacho Diestro envía un extenso informe detallando la situación de la compostera, ya en un estado de avance muy importante.
 
 
