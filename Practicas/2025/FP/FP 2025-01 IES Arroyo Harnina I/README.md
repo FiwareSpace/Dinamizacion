@@ -14,8 +14,8 @@ Juan Hernández Belloso
 - WAMP
 
 
-## Proyecto / Actividades:
-#### Reparación Maqueta Parking
-#### Análisis funcionamiento Maqueta Depuradora
+## Proyecto / Actividades
+- Reparación Maqueta Parking
+- Análisis funcionamiento Maqueta Depuradora
 
 
