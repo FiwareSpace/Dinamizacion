@@ -7,7 +7,15 @@ Prácticas de empresa
 ### Participantes:
 Juan Hernández Belloso
 
+### Formación recibida:
+FIWARE
+MQTT
+Node-Red
+WAMP
+
 
 ## Proyecto / Actividades:
 #### Reparación Maqueta Parking
+#### Análisis funcionamiento Maqueta Depuradora
+
 
