@@ -2,7 +2,7 @@ Cortar los cables
 
 Wifimanager
 
-![Texto alternativo](Resources/images/01_Encabezado_titulo.png)
+![Texto alternativo](resources/images/01_Encabezado_titulo.png)
 
 
 # INSTRUCCIONES DE MONTAJE, PROGRAMACIÓN, PUESTA EN MARCHA Y ACTUALIZACIÓN
