@@ -11,3 +11,6 @@ Inicio: Septiembre 2024
 Fin: Junio 2025
 
 ## Concepto: Desarrollo de una compostera ciudadana dotada de sensores.
+
+Documentación final:
+## https://github.com/idiestro/TFM-IDG-SmartComposters
