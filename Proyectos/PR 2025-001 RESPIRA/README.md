@@ -9,11 +9,11 @@ Wifimanager
 
 ![Portada](resources/images/02_Portada.png)
 
-- [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
-- [2 Componentes Hardware](#2-listado-de-componentes-hardware)
-- [3 Componentes Software](#3-Software)
-- [4 Montaje y conexionado](#4-montaje-y-conexionado)
-- [5 Programación software](#5-programacion-software)
+ - [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
+ - [2 Componentes Hardware](#2-listado-de-componentes-hardware)
+ - [3 Componentes Software](#3-Software)
+ - [4 Montaje y conexionado](#4-montaje-y-conexionado)
+ - [5 Programación software](#5-programacion-software)
  
 
 # 1 ¿Qué es RESPIRA?
