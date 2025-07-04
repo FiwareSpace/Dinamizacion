@@ -13,6 +13,9 @@ Wifimanager
  - [2 Componentes Hardware](#2-listado-de-componentes-hardware)
  - [3 Componentes Software](#3-Software)
  - [4 Montaje y conexionado](#4-montaje-y-conexionado)
+  - [4.1 Esquema de conexionado](#4.1 Esquema de conexionado)
+ - 
+
  - [5 Programación software](#5-programacion-software)
  - [6 Ejecución en plataforma](#6-ejecución-en-plataforma)
  
