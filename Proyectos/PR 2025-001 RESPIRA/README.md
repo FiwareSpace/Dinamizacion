@@ -113,6 +113,8 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 - Aplicación RESPIRA para Arduino
 
 # 4 Montaje y conexionado
+## e4.1 Esquema de conexionado
+ ![Esquema Conexionado](resources/images/04_EsquemaConexionado.png)
 
 Conexionado
 
