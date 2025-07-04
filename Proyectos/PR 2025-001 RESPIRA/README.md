@@ -15,7 +15,7 @@ Wifimanager
  - [4 Montaje y conexionado](#4-montaje-y-conexionado)
  - [5 Programación software](#5-programacion-software)
  - [6 Ejecución en plataforma](#6-ejecución-en-plataforma)
-
+ 
  
 
 # 1 ¿Qué es RESPIRA?
