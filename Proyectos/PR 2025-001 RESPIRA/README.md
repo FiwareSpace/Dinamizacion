@@ -10,8 +10,8 @@ Wifimanager
 ![Portada](resources/images/02_Portada.png)
 
 - [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
-- [2 Listado de Componentes Hardware](#2-listado-de-componentes-hardware)
-- [3 Software](#3-Software)
+- [2 Componentes Hardware](#2-listado-de-componentes-hardware)
+- [3 Componentes Software](#3-Software)
 - [Capítulo 4: Créditos](#capítulo-4-créditos)
 
 # 1 ¿Qué es RESPIRA?
@@ -33,7 +33,7 @@ Siendo fieles a los principios de compartición de la filosofía Open Data, los 
 
 
 
-# 2 Listado de Componentes Hardware
+# 2 Componentes Hardware
 
 # 2.1 Microcontrolador ESP32 
 |                         |                      |
@@ -98,15 +98,12 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 |------------------------------|----------------------------------|
 | ![image](![image](resources/images/08_Carcasa.png)       |    Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior   |
 
-
-
 ## 2.7 Soporte de componentes
 |                         |                      |
 |------------------------------|----------------------------------|
 |  ![image](resources/images/09_Soporte.png)    ![image](resources/images/09b_Soporte_reverso.png) | Insertado en la carcasa y con perforaciones para atornillar los componentes.  Permite fijar el conjunto de manera sólida   |
 
-
-# 3 Software
+# 3 Componentes Software
 ## Necesidades
 - ArduinoIDE
 - Librería de código para sensor de gases
