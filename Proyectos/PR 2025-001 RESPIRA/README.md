@@ -11,7 +11,7 @@ Wifimanager
 
 - [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
 - [2 Listado de Componentes Hardware](#2-listado-de-componentes-hardware)
-- [3 Software](#3 Software)
+- [3 Software](#3-Software)
 - [Capítulo 4: Créditos](#capítulo-4-créditos)
 
 # 1 ¿Qué es RESPIRA?
