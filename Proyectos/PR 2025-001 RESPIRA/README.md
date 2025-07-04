@@ -124,12 +124,12 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 # 4 Montaje y conexionado
 ## 4.1 Esquema de conexionado
  ![Esquema Conexionado](resources/images/04_EsquemaConexionado.png)
-## Proceso de Montaje
-### Clipado del chip en placa de Desarrollo
-### Montaje de sensor de Temperatura y Humedad
-### Montaje de sensor de gases
-### Montaje de sensor de partículas
-### Montaje de sensores sobre placa intermedia
+## 4.2 Proceso de Montaje
+### 4.2.1 Clipado del chip en placa de Desarrollo
+### 4.2.2 Montaje de sensor de Temperatura y Humedad
+### 4.2.3 Montaje de sensor de gases
+### 4.2.4 Montaje de sensor de partículas
+### 4.2.5 Montaje de sensores sobre placa intermedia
 
 
 
