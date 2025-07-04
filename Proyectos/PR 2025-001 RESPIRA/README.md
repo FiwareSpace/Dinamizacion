@@ -109,9 +109,9 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 # 3 Software
 ## Necesidades
 - ArduinoIDE
-- Librería sensor de gases
-- Librería sensor de Temperatura y Humedad
-- Librería sensor de partículas
+- Librería de código para sensor de gases
+- Librería de código para sensor de Temperatura y Humedad
+- Librería de código para sensor de partículas
 - Aplicación RESPIRA para Arduino
 Conexionado
 
