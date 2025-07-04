@@ -12,7 +12,10 @@ Wifimanager
 
 RESPIRA es una solución tecnológica IoT de código abierto compuesta por estaciones de medición de calidad del aire y por una plataforma web en la que se recogen y analizan las diferentes valoraciones sobre el estado del aire que respiramos, permitiendo así estudiar sus evoluciones a lo largo del tiempo con el fin de observar posibles procesos climáticos en nuestro territorio.
 ![Plataforma](resources/images/02d_Sensorizaciones.png)
-Cualquiera puede construir su propia estación RESPIRA, para que una vez conectada a una red Wi-Fi transmita y comparta los datos de su ubicación, pero esta novedosa plataforma permite además que un sinfín de dispositivos que midan parámetros ambientales puedan sumarse, conectarse y compartir sus resultados con la comunidad.
+
+Cualquiera puede construir su propia estación RESPIRA siguiendo las indicaciones de este documento y puede conectarla a la plataforma del proyecto para transmitir vía WiFi los datos de su ubicación y ambientales.
+
+Esta novedosa plataforma permite además que un sinfín de dispositivos que midan parámetros ambientales puedan sumarse, conectarse y compartir sus resultados con la comunidad.
 
 Puede encontrar la plataforma en http://www.calidadmedioambiental.org/
 ![Plataforma](resources/images/02b_Plataforma.png)
