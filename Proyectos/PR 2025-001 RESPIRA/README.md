@@ -26,9 +26,12 @@ Cualquiera puede construir su propia estación RESPIRA siguiendo las indicacione
 Esta novedosa plataforma permite además que un sinfín de dispositivos que midan parámetros ambientales puedan sumarse, conectarse y compartir sus resultados con la comunidad.
 
 Puede encontrar la plataforma en http://www.calidadmedioambiental.org/
+
 ![Plataforma](resources/images/02b_Plataforma.png)
 En ella se muestran sensores medioambientales, no solamente proporcionados por los usuarios de RESPIRA, sino también procedentes de otras fuentes de datos.
+
 La plataforma muestra información de todas las estaciones registradas. Acercando el detalle de la imagen puede conocerse el detalle de las mediciones de una estación concreta.
+
 ![Plataforma detalle](resources/images/02c_PlataformaDetalle.png)
 Siendo fieles a los principios de compartición de la filosofía Open Data, los datos sobre la calidad medioambiental generados por toda esta red de estaciones de medición (RESPIRA, AEMET, EEA, o cualquier otro que se incorpore), quedan disponibles en una plataforma web abierta para que quienes estén interesados puedan usarlos a su antojo pero, sobre todo, para que todo el mundo tenga acceso a una información fiable y actualizada sobre la calidad ambiental de su pueblo o ciudad.
 
@@ -46,6 +49,9 @@ Los sensores son cableados a los pines adecuados que por programa son asociados 
 
 El chip muestra 38 pines con diferentes funciones. Los pines GND y VCC 5V, VCC 3.3v proporcionan la alimentación para los sensores.
 
+> [!IMPORTANT]
+>A recordar que se adopta como convención utilizar el color negro para los cables GND (masa) y rojo para los cables VCC (5V o 3.3V). Sin embargo, dependiendo de las series, determinados sensores pueden utilizar un código de colores diferente. En cualquier caso los sensores indican en su rotulado el uso correcto de cada cable o pin.
+> 
 Además de pines con funciones específicas, existen pines analógicos, digitales de entrada, salida, o configurables como entrada o salida por programa. La programación "escucha" los pines de entrada, que pueden proporcionar valores digitales 1 o 0 (HIGH/LOW), o analógicos.
 
 Estas entradas pueden llegar desde interruptores, pulsadores, o sensores. 
