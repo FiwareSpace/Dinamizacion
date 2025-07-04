@@ -27,7 +27,7 @@ Siendo fieles a los principios de compartición de la filosofía Open Data, los 
 
 
 
-# LISTADO DE COMPONENTES HARDWARE
+# 2 LISTADO DE COMPONENTES HARDWARE
 
 # 1 Microcontrolador ESP32 
 |                         |                      |
