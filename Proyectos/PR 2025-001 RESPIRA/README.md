@@ -124,12 +124,23 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 # 4 Montaje y conexionado
 ## 4.1 Esquema de conexionado
  ![Esquema Conexionado](resources/images/04_EsquemaConexionado.png)
-## 4.2 Proceso de Montaje
+## 4.2 Proceso de conexionado
 ### 4.2.1 Clipado del chip en placa de Desarrollo
-### 4.2.2 Montaje de sensor de Temperatura y Humedad
-### 4.2.3 Montaje de sensor de gases
-### 4.2.4 Montaje de sensor de partículas
-### 4.2.5 Montaje de sensores sobre placa intermedia
+### 4.2.2 Conexionado de sensor de Temperatura y Humedad
+### 4.2.3 Conexionado de sensor de gases
+### 4.2.4 Conexionado de sensor de partículas
+### 4.2.5 Conexionado de sensores sobre placa intermedia
+## 4.3 Montaje en placa intermedia
+## 4.4 Montaje final en carcasa
+
+# 5 Programación software
+## 5.1 Funciones parciales
+### 5.1.1 Funciones Sensor Temperatura y Humedad
+### 5.1.2 Funciones Sensor de gases
+### 5.1.3 Funciones Sensor de partículas
+## 5.2 Conexión WiFi
+## 5.3 CÓDIGO COMPLETO
+
 
 
 
