@@ -113,8 +113,18 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 - Aplicación RESPIRA para Arduino
 
 # 4 Montaje y conexionado
-## e4.1 Esquema de conexionado
+## 4.1 Esquema de conexionado
  ![Esquema Conexionado](resources/images/04_EsquemaConexionado.png)
+## Proceso de Montaje
+### Clipado del chip en placa de Desarrollo
+### Montaje de sensor de Temperatura y Humedad
+### Montaje de sensor de gases
+### Montaje de sensor de partículas
+### Montaje de sensores sobre placa intermedia
+
+
+
+ 
 
 Conexionado
 
