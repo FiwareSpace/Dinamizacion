@@ -13,7 +13,7 @@ Wifimanager
 - [2 Componentes Hardware](#2-listado-de-componentes-hardware)
 - [3 Componentes Software](#3-Software)
 - [4 Montaje y conexionado](#4-montaje-y-conexionado)
-- [5 Programación](#5-programación)
+- [5 Programación software](#5-programacion-software)
  
 
 # 1 ¿Qué es RESPIRA?
@@ -139,15 +139,8 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 ### 5.1.2 Funciones Sensor de gases
 ### 5.1.3 Funciones Sensor de partículas
 ## 5.2 Conexión WiFi
-## 5.3 CÓDIGO COMPLETO
+## 5.3 Envío FIWARE
+## 5.4 CÓDIGO COMPLETO
 
-
-
-
- 
-
-Conexionado
-
-# 5 Programación
-# CONECTAR A WIFI
-La aplicación incluye WIFIManager, un 
+# 6 Ejecución en plataforma
+## 6.1 
