@@ -10,6 +10,8 @@ Wifimanager
 ![Portada](resources/images/02_Portada.png)
 # ¿Qué es RESPIRA?
 
+RESPIRA es una solución tecnológica IoT de código abierto compuesta por estaciones de medición de calidad del aire y por una plataforma web en la que se recogen y analizan las diferentes valoraciones sobre el estado del aire que respiramos, permitiendo así estudiar sus evoluciones a lo largo del tiempo con el fin de observar posibles procesos climáticos en nuestro territorio.
+
 
 # LISTADO DE COMPONENTES HARDWARE
 
