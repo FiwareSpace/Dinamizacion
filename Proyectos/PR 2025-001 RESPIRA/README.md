@@ -29,7 +29,7 @@ Siendo fieles a los principios de compartición de la filosofía Open Data, los 
 
 # 2 LISTADO DE COMPONENTES HARDWARE
 
-# 1 Microcontrolador ESP32 
+# 2.1 Microcontrolador ESP32 
 |                         |                      |
 |------------------------------|----------------------------------|
 | ![](resources/images/03_material_ESP32.JPEG)        |Constituye el cerebro de la estación meteorológica.Contiene la programación específica de la estación, y recibe los datos de los sensores, que adapta y prepara para su envío a la plataforma.        |
@@ -45,7 +45,7 @@ Estas entradas pueden llegar desde interruptores, pulsadores, o sensores.
 En este conjunto no existe comandado, pero pines configurados como salida pueden enviar a actuadores señales de encendido o de control, directamente, o a través de chips que interpretan la señal, como los drivers de motores.   
 
 
-## 2 Placa de desarrollo
+## 2.2 Placa de desarrollo
 |                         |                      |
 |------------------------------|----------------------------------|
 | ![image](resources/images/04_Placa_Desarrollo_2.JPG)       |Placa de adaptación para permitir el atornillado en bornas       |
@@ -60,12 +60,12 @@ Cada borna para atornillar muestra un texto serigrafiado que se corresponde con 
 > [!CAUTION]
 > En algunas placas de desarrollo aparece como GND una borna incorrectamente. En realidad se corresponde con CMD en el chip, y NO debe utilizarse como Ground.
 
-## 3 Sensor de Temperatura y Humedad
+## 2.3 Sensor de Temperatura y Humedad
 |                         |                      |
 |------------------------------|----------------------------------|
 | ![image](resources/images/05_DHT22_1.png)       |  El sensor DHT22 es muy conocido en el mundo maker, permite obtener con facilidad ambos valores ambientales. Se presenta con un cable externo     |
 
-## 4 Sensor de gases
+## 2.4 Sensor de gases
 |                         |                      |
 |------------------------------|----------------------------------|
 |  ![image](resources/images/06_Gases.png)       |  Permite detectar en el ambiente gases como CO2, CO, NO2.     |
@@ -73,7 +73,7 @@ Cada borna para atornillar muestra un texto serigrafiado que se corresponde con 
 
 
 
-## 5 Sensor de partículas
+## 2.5 Sensor de partículas
 |                         |                      |
 |------------------------------|----------------------------------|
 | ![image](resources/images/07_Particulas.png)       |    Proporciona información PM (Particule Matter) acerca del tamaño de las partículas en suspensión en el aire. La medición de la presencia de partículas se realiza en función de su diámetro expresado en micrómetros, usando denominaciones como PM1, PM2.5, PM10.  |
@@ -87,14 +87,14 @@ Las partículas en suspensión (total de partículas suspendidas: TPS) (o materi
 
 El sensor de partículas se presenta en un formato compacto con 5 cables.
 
-## 6 Carcasa principal
+## 2.6 Carcasa principal
 |                         |                      |
 |------------------------------|----------------------------------|
 | ![image](![image](resources/images/08_Carcasa.png)       |    Como parte del proyecto, ha sido diseñada e impresa en 3D una carcasa con ranuras de ventilación y una placa interna de apoyo para los componentes. Se complementa con tapas de metacrilato que permiten ver el interior   |
 
 
 
-## 7 Soporte de componentes
+## 2.7 Soporte de componentes
 |                         |                      |
 |------------------------------|----------------------------------|
 |  ![image](resources/images/09_Soporte.png)    ![image](resources/images/09b_Soporte_reverso.png) | Insertado en la carcasa y con perforaciones para atornillar los componentes.  Permite fijar el conjunto de manera sólida   |
