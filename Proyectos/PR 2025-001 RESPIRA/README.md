@@ -12,7 +12,7 @@ Wifimanager
 - [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
 - [2 Componentes Hardware](#2-listado-de-componentes-hardware)
 - [3 Componentes Software](#3-Software)
-- [Capítulo 4: Créditos](#capítulo-4-créditos)
+- [4 Montaje y conexionado](#4-montaje-y-onexionado)
 
 # 1 ¿Qué es RESPIRA?
 
@@ -104,12 +104,14 @@ El sensor de partículas se presenta en un formato compacto con 5 cables.
 |  ![image](resources/images/09_Soporte.png)    ![image](resources/images/09b_Soporte_reverso.png) | Insertado en la carcasa y con perforaciones para atornillar los componentes.  Permite fijar el conjunto de manera sólida   |
 
 # 3 Componentes Software
-## Necesidades
 - ArduinoIDE
 - Librería de código para sensor de gases
 - Librería de código para sensor de Temperatura y Humedad
 - Librería de código para sensor de partículas
 - Aplicación RESPIRA para Arduino
+
+# 4 Montaje y conexionado
+
 Conexionado
 
 # CONECTAR A WIFI
