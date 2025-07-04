@@ -10,7 +10,7 @@ Wifimanager
 ![Portada](resources/images/02_Portada.png)
 
 - [1 ¿Qué es RESPIRA?](#1-qué-es-respira)
-- [2 LISTADO DE COMPONENTES HARDWARE](#2-listado-de-componentes-hardware)
+- [2 Listado de Componentes Hardware](#2-listado-de-componentes-hardware)
 - [Capítulo 3: Uso básico](#capítulo-3-uso-básico)
 - [Capítulo 4: Créditos](#capítulo-4-créditos)
 
@@ -33,7 +33,7 @@ Siendo fieles a los principios de compartición de la filosofía Open Data, los 
 
 
 
-# 2 LISTADO DE COMPONENTES HARDWARE
+# 2 Listado de Componentes Hardware
 
 # 2.1 Microcontrolador ESP32 
 |                         |                      |
