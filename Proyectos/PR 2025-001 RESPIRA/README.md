@@ -15,7 +15,7 @@ RESPIRA es una solución tecnológica IoT de código abierto compuesta por estac
 Cualquiera puede construir su propia estación RESPIRA, para que una vez conectada a una red Wi-Fi transmita y comparta los datos de su ubicación, pero esta novedosa plataforma permite además que un sinfín de dispositivos que midan parámetros ambientales puedan sumarse, conectarse y compartir sus resultados con la comunidad.
 
 Puede encontrar la plataforma en http://www.calidadmedioambiental.org/
-
+![Plataforma](resources/images/02b_Plataforma.png)
 Siendo fieles a los principios de compartición de la filosofía Open Data, los datos sobre la calidad medioambiental generados por toda esta red de estaciones de medición (RESPIRA, AEMET, EEA, o cualquier otro que se incorpore), quedan disponibles en una plataforma web abierta para que quienes estén interesados puedan usarlos a su antojo pero, sobre todo, para que todo el mundo tenga acceso a una información fiable y actualizada sobre la calidad ambiental de su pueblo o ciudad.
 
 
