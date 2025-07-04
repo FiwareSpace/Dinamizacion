@@ -50,7 +50,7 @@ Los sensores son cableados a los pines adecuados que por programa son asociados 
 El chip muestra 38 pines con diferentes funciones. Los pines GND y VCC 5V, VCC 3.3v proporcionan la alimentación para los sensores.
 
 > [!IMPORTANT]
->A recordar que se adopta como convención utilizar el color negro para los cables GND (masa) y rojo para los cables VCC (5V o 3.3V). Sin embargo, dependiendo de las series, determinados sensores pueden utilizar un código de colores diferente. En cualquier caso los sensores indican en su rotulado el uso correcto de cada cable o pin.
+>A recordar que se adopta como convención utilizar -para los cables a conectar con el chip/placa de desarrollo- el color negro para los cables GND (masa) y rojo para los cables VCC (5V o 3.3V). Sin embargo, dependiendo de las series, determinados sensores pueden utilizar un código de colores diferente. En cualquier caso los sensores indican en su rotulado el uso correcto de cada cable o pin.
 > 
 Además de pines con funciones específicas, existen pines analógicos, digitales de entrada, salida, o configurables como entrada o salida por programa. La programación "escucha" los pines de entrada, que pueden proporcionar valores digitales 1 o 0 (HIGH/LOW), o analógicos.
 
