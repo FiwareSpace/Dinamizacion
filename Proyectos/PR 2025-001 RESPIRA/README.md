@@ -9,7 +9,7 @@ Wifimanager
 
 ![Portada](resources/images/02_Portada.png)
 
-- [¿Qué es RESPIRA?](#que-es-respira)
+- [¿Qué es RESPIRA?](#1-que-es-respira)
 - [Capítulo 2: Instalación](#capítulo-2-instalación)
 - [Capítulo 3: Uso básico](#capítulo-3-uso-básico)
 - [Capítulo 4: Créditos](#capítulo-4-créditos)
