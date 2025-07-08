@@ -39,10 +39,15 @@ Es la manera de generar nuevo conocimiento que repercutirá en los participantes
 
 ### Control de la Documentación
 En el GitHub de tus Prácticas encontrarás una serie de directorios para depositar tus resultados y seguimiento.
+
 -00 Memorias: Resultado final de tu proyecto. Puede ser la memoria oficial de tu universidad o un informe particular para Diputación.
+
 -01 Registros: Tu Universidad o IES puede requerirte firmas diarias o registro de tu estancia. Resulta práctico depositarlo aquí para su firma
+
 -02 Informes: Formatos normalizados de fin de proyecto, documentos administrativos
+
 -03 Recursos Generados: Programas, maquetas, etc. resultado de vuestro trabajo.
+
 -04 Análisis y estudios: Estudios que pudieras haber realizado (por ejemplo, analizar una aplicación para ver la viabilidad de su uso)
 
 ### Acceso a históricos
