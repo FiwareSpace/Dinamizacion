@@ -1,13 +1,16 @@
 ## Instrucciones para estudiantes de Prácticas de Empresa, Trabajo Fin de Grado y Trabajo Fin de Máster.
 
-###Objeto:
-La realización de estas actividades se desarrolla en el Centro FIWARE Space situado en el edificio 2 del Parque Científico y Tecnológico de Extremadura.
+### Objeto de este documento:
+Describir inicialmente las relaciones entre estudiantes de prácticas y el centro.
 
+### Ubicación
+La realización de estas actividades se desarrolla en el Centro FIWARE Space situado en el edificio 2 del Parque Científico y Tecnológico de Extremadura. Determinados trabajos podrán ser realizados en remoto, pero el beneficio de las prácticas se constata en las actividades presenciales
+
+### Colaboradores con tu proyecto
 Antonio Hernández, responsable del centro, os atenderá inicialmente y para cuestiones documentales
 Jorge Osuna y Miguel López, dinamizadores del centro, indistintamente atenderán vuestra estancia.
 Ulises Gamero, responsable del proyecto en Diputación de Badajoz, firmará vuestras prácticas.
-Os iremos comunicando los distintos procedimientos.
-
+Os iremos comunicando los distintos procedimientos para ello.
 
 ### Formación:
 FIWARE Space se centra en la tecnología FIWARE de Internet de las Cosas. Por tanto, es el core de la formación.
