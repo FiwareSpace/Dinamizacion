@@ -9,7 +9,8 @@ FIWARE Space no es una empresa productiva, sino un Centro de Innovación pertene
 En ese sentido, cuenta con ventajas frente a una empresa productiva:
 - Atención diaria y permanente por parte de los dinamizadores, sin depender de parones por dedicación a la empresa.
 - Amplios conocimientos tecnológicos
-- Flexibilidad
+- Flexibilidad a la hora de decidir tu proyecto.
+- Apoyo al desarrollo de tu proyecto.
 
 ### Ubicación
 La realización de estas actividades se desarrolla en el Centro FIWARE Space situado en el edificio 2 del Parque Científico y Tecnológico de Extremadura. Determinados trabajos podrán ser realizados en remoto, pero el beneficio de las prácticas se constata en las actividades presenciales
