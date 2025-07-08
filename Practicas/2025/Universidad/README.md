@@ -1,7 +1,13 @@
 ## Instrucciones para estudiantes de Prácticas de Empresa, Trabajo Fin de Grado y Trabajo Fin de Máster.
 
 ### Objeto de este documento:
-Describir inicialmente las relaciones entre estudiantes de prácticas y el centro.
+Describir inicialmente las relaciones entre estudiantes de prácticas y el centro. 
+
+### Filosofía de la colaboración
+
+FIWARE Space no es una empresa, es un centro de Innovación perteneciente al proyecto "Badajoz es Más" de Diputación de Badajoz.
+En ese sentido cobra ventaja frente a las prácticas en una empresa productiva:
+-
 
 ### Ubicación
 La realización de estas actividades se desarrolla en el Centro FIWARE Space situado en el edificio 2 del Parque Científico y Tecnológico de Extremadura. Determinados trabajos podrán ser realizados en remoto, pero el beneficio de las prácticas se constata en las actividades presenciales
@@ -18,7 +24,6 @@ Se centra en el envío de datos de sensores a plataformas para su explotación.
 En paralelo se enseñarán tecnologías accesorias que facilitan su implementación.
 También se comentará sobre Análisis de Datos, Inteligencia Artificial, etc.
 Y por último, se incluyen charlas sobre empleabilidad: preparación para el mercado de trabajo, creación de perfiles profesionales LinkedIn, etc.
-
 
 ### Proyectos:
 Aunque no es estrictamente obligatorio por nuestra parte, encontramos que la manera más eficaz de aprender es proponer proyectos que supongan un desafío para vuestras capacidades. Necesitaréis aprender tecnologías, aplicaciones, maneras de programar que en conjunto os permitan fabricar ese proyecto en el que seréis mentorizados.
