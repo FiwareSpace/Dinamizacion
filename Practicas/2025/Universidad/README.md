@@ -16,9 +16,9 @@ En ese sentido, cuenta con ventajas frente a una empresa productiva:
 La realización de estas actividades se desarrolla en el Centro FIWARE Space situado en el edificio 2 del Parque Científico y Tecnológico de Extremadura. Determinados trabajos podrán ser realizados en remoto, pero el beneficio de las prácticas se constata en las actividades presenciales
 
 ### Colaboradores con tu proyecto
-Antonio Hernández, responsable del centro, os atenderá inicialmente y para cuestiones documentales
-Jorge Osuna y Miguel López, dinamizadores del centro, indistintamente atenderán vuestra estancia.
-Ulises Gamero, responsable del proyecto en Diputación de Badajoz, firmará vuestras prácticas.
+- Antonio Hernández, responsable del centro, os atenderá inicialmente y para cuestiones documentales
+- Jorge Osuna y Miguel López, dinamizadores del centro, indistintamente atenderán vuestra estancia.
+- Ulises Gamero, responsable del proyecto en Diputación de Badajoz, firmará vuestras prácticas.
 Os iremos comunicando los distintos procedimientos para ello.
 
 ### Formación:
