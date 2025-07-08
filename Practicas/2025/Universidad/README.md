@@ -19,6 +19,7 @@ La realización de estas actividades se desarrolla en el Centro FIWARE Space sit
 - Antonio Hernández, responsable del centro, os atenderá inicialmente y para cuestiones documentales
 - Jorge Osuna y Miguel López, dinamizadores del centro, indistintamente atenderán vuestra estancia.
 - Ulises Gamero, responsable del proyecto en Diputación de Badajoz, firmará vuestras prácticas.
+  
 Os iremos comunicando los distintos procedimientos para ello.
 
 ### Formación:
@@ -50,5 +51,18 @@ En el GitHub de tus Prácticas encontrarás una serie de directorios para deposi
 
 - 04 Análisis y estudios: Estudios que pudieras haber realizado (por ejemplo, analizar una aplicación para ver la viabilidad de su uso)
 
+### Histórico de tu proyecto
+Es importante que anotes cada día en el documento Histórico.md las actividades realizadas. En este documento puedes hacerlo de manera más informal. 
+
+Posteriormente te servirá para los propios informes en el formato de Universidad e IES. 
+
+En este punto es más para controlar desde el centro en qué punto está la formación
+
 ### Acceso a históricos
-Tienes acceso a documentación de participantes que te han precedido. Puedes ver sus informes, análisis y proyectos para así enriquecer tu proyecto
+Tienes acceso a documentación de participantes que te han precedido. 
+
+Puedes ver sus informes, análisis y proyectos y aprender de sus experiencias para así enriquecer tu proyecto.
+
+Tus propios trabajos servirán para quienes te sigan.
+
+
