@@ -4,7 +4,9 @@ Autor: Ignacio Diestro
 
 Universidad: Escuela Politécnica de Cáceres
 
-Profesor Tutor: Antonio Gordillo         Dinamizador FIWARE Space: Jorge Osuna
+Profesor Tutor: Antonio Gordillo        
+
+Dinamizador FIWARE Space: Jorge Osuna
 
 Inicio: Septiembre 2024
 
