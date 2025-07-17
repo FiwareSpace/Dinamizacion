@@ -14,3 +14,7 @@ Fin: Junio 2025
 
 Documentación final:
 ## https://github.com/idiestro/TFM-IDG-SmartComposters
+
+Repositorio original Ignacio Diestro:
+https://github.com/idiestro/TFM-IDG-SmartComposters
+
