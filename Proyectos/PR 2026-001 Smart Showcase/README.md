@@ -28,7 +28,8 @@ Varios silos (de los cuales solo uno estaría sensorizado), ubicado en un entorn
 #### c) Datos enviados: 
 Datos de llenado de silo (cada X segundos) y, alternativamente, estatus de los motores.
 #### d) Esquema de conexión: 
-En la carpeta correspondiente
+- [Diagrama visual](https://github.com/FiwareSpace/Dinamizacion/blob/main/Proyectos/PR%202026-001%20Smart%20Showcase/FSS02%20-%20Silo%20Inteligente/FSS02%20-%20Esquema%201.png)
+- [Esquema de conexiones](https://github.com/FiwareSpace/Dinamizacion/blob/main/Proyectos/PR%202026-001%20Smart%20Showcase/FSS02%20-%20Silo%20Inteligente/FSS02%20-%20Silo%20Inteligente%20-%20Esquema.pdf)
 #### e) Código:
 ### 3.3 Control de riego
 ### 3.4 Monitorización de residuos
