@@ -5,3 +5,5 @@ Desarrollo Práctico: Aunque el diseño documental preveía sensorizar el pavime
 Simulación y Prevención: La telemetría de la aeronave se procesa en un panel Node-RED que incluye un horizonte artificial y un sistema automatizado de alertas de voz. Esto dota a la cabina de advertencias de altitud y ángulos de inclinación críticos ("Bank angle").
 
 Propuesta de Seguridad: El desarrollo actual del avión responde directamente a una de las medidas preventivas extraídas del accidente: la necesidad de instalar sistemas de alerta directa en la cabina para dotar a los pilotos de una capa adicional de seguridad, reduciendo así la dependencia exclusiva de los sistemas de vigilancia en tierra.
+
+(Falta: memoria tecnica con anexos, manual de uso, informes tecnicos, implementar alcance, dificultades y logros, archivos impresion del avion con planos de despieze, ...) 
