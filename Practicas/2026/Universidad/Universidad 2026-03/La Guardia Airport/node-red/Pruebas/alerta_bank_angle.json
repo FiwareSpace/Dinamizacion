@@ -1,0 +1,21 @@
+[
+    {
+        "id": "fn_bank_angle",
+        "type": "function",
+        "name": "Alerta Bank Angle",
+        "func": "const ANGULO_CRITICO = 45; // Grados críticos (cámbialo si quieres)\nconst MUESTRAS = 10;       // Memoria de los últimos 10 valores\nconst MAYORIA = 6;         // Cuántos deben fallar para pitar\n\nlet history = context.get('history') || [];\nlet isWarningActive = context.get('isWarningActive') || false;\n\n// Leer el ángulo que entra\nlet angulo = parseFloat(msg.payload);\nif (isNaN(angulo)) return null;\n\n// Actualizar el historial de los últimos 10 valores\nhistory.push(angulo);\nif (history.length > MUESTRAS) {\n    history.shift();\n}\ncontext.set('history', history);\n\n// Contar cuántos valores superan el ángulo crítico (en positivo o negativo)\nlet countCritical = 0;\nfor (let i = 0; i < history.length; i++) {\n    if (Math.abs(history[i]) >= ANGULO_CRITICO) {\n        countCritical++;\n    }\n}\n\n// Lógica de disparo y filtro anti-spam\nif (countCritical >= MAYORIA && !isWarningActive) {\n    context.set('isWarningActive', true);\n    return { payload: \"Bank angle, bank angle\" };\n} else if (countCritical < MAYORIA && isWarningActive) {\n    // Si el avión se endereza, rearmamos la alarma\n    context.set('isWarningActive', false);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "nodo_altavoz"
+            ]
+        ]
+    }
+]

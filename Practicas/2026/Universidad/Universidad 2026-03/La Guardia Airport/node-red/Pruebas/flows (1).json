@@ -1,0 +1,261 @@
+[
+    {
+        "id": "4d747895866d9b09",
+        "type": "tab",
+        "label": "Flujo 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mqtt_entrada_limpia",
+        "type": "mqtt in",
+        "z": "4d747895866d9b09",
+        "name": "MQTT La Guardia",
+        "topic": "la_guardia/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "57f4bb5225a4be11",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "fn_matematicas_limpias",
+                "fn_matematicas_limpias_v2"
+            ]
+        ]
+    },
+    {
+        "id": "btn_calibrar_limpio",
+        "type": "ui_button",
+        "z": "4d747895866d9b09",
+        "name": "",
+        "group": "grupo_numeros",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "🎯 TARA (Poner a 0)",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#d32f2f",
+        "className": "",
+        "icon": "",
+        "payload": "calibrar",
+        "payloadType": "str",
+        "topic": "calibrar",
+        "topicType": "str",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "fn_matematicas_limpias",
+                "fn_matematicas_limpias_v2"
+            ]
+        ]
+    },
+    {
+        "id": "fn_matematicas_limpias",
+        "type": "function",
+        "z": "4d747895866d9b09",
+        "name": "Cálculo y Filtro Numérico",
+        "func": "let data = context.get('data') || {\n    ax: 0, ay: 0, az: 9.81,\n    gz: 0,\n    yaw: 0,\n    dist: 0,\n    lastTime: Date.now(),\n    offsetPitch: 0,\n    offsetRoll: 0\n};\n\nif (msg.topic === \"calibrar\") {\n    let currentPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\n    let currentRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n    \n    data.offsetPitch = currentPitch;\n    data.offsetRoll = currentRoll;\n    data.yaw = 0;\n    \n    context.set('data', data);\n    \n    return [\n        { payload: \"0.00\" },\n        { payload: \"0.00\" },\n        { payload: \"0.00\" },\n        { payload: data.dist.toFixed(1) }\n    ];\n}\n\nlet p = parseFloat(msg.payload);\n\nif (msg.topic === \"la_guardia/aceleracion/x\") data.ax = p;\nelse if (msg.topic === \"la_guardia/aceleracion/y\") data.ay = p;\nelse if (msg.topic === \"la_guardia/aceleracion/z\") data.az = p;\nelse if (msg.topic === \"la_guardia/giroscopio/z\") data.gz = p;\nelse if (msg.topic === \"la_guardia/distancia\") {\n    data.dist = p;\n    context.set('data', data);\n    return [null, null, null, { payload: p.toFixed(1) }];\n}\nelse return null;\n\n// Guiñada (Yaw)\nlet now = Date.now();\nlet dt = (now - data.lastTime) / 1000.0;\ndata.lastTime = now;\n\nlet gz_deg = data.gz * (180 / Math.PI);\nif (Math.abs(gz_deg) > 1.0) {\n    data.yaw += (gz_deg * dt);\n}\nif (data.yaw > 180) data.yaw -= 360;\nelse if (data.yaw < -180) data.yaw += 360;\n\n// Cabeceo y Alabeo (Pitch & Roll)\nlet rawPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\nlet rawRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n\nlet finalPitch = rawPitch - data.offsetPitch;\nlet finalRoll = rawRoll - data.offsetRoll;\n\ncontext.set('data', data);\n\nreturn [\n    { payload: finalPitch.toFixed(2) },\n    { payload: finalRoll.toFixed(2) },\n    { payload: data.yaw.toFixed(2) },\n    null\n];",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "txt_pitch",
+                "ui_horizonte_nuevo"
+            ],
+            [
+                "txt_roll",
+                "ui_horizonte_nuevo"
+            ],
+            [
+                "txt_yaw"
+            ],
+            [
+                "txt_distancia"
+            ]
+        ]
+    },
+    {
+        "id": "txt_pitch",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Cabeceo (Pitch):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1090,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "txt_roll",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alabeo (Roll):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1080,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "txt_yaw",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Guiñada (Yaw):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "txt_distancia",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Distancia HC-SR04:",
+        "format": "{{msg.payload}} cm",
+        "layout": "row-spread",
+        "x": 1100,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fn_matematicas_limpias_v2",
+        "type": "function",
+        "z": "4d747895866d9b09",
+        "name": "Cálculo Numérico (4 salidas)",
+        "func": "let data = context.get('data') || {\n    ax: 0, ay: 0, az: 9.81,\n    gz: 0,\n    yaw: 0,\n    dist: 0,\n    lastTime: Date.now(),\n    offsetPitch: 0,\n    offsetRoll: 0\n};\n\nif (msg.topic === \"calibrar\") {\n    let currentPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\n    let currentRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n    \n    data.offsetPitch = currentPitch;\n    data.offsetRoll = currentRoll;\n    data.yaw = 0;\n    \n    context.set('data', data);\n    \n    return [\n        { payload: \"0.00\", topic: \"Cabeceo\" },\n        { payload: \"0.00\", topic: \"Alabeo\" },\n        { payload: \"0.00\", topic: \"Guiñada\" },\n        { payload: data.dist.toFixed(1), topic: \"Distancia\" }\n    ];\n}\n\nlet p = parseFloat(msg.payload);\n\nif (msg.topic === \"la_guardia/aceleracion/x\") data.ax = p;\nelse if (msg.topic === \"la_guardia/aceleracion/y\") data.ay = p;\nelse if (msg.topic === \"la_guardia/aceleracion/z\") data.az = p;\nelse if (msg.topic === \"la_guardia/giroscopio/z\") data.gz = p;\nelse if (msg.topic === \"la_guardia/distancia\") {\n    data.dist = p;\n    context.set('data', data);\n    return [null, null, null, { payload: p.toFixed(1), topic: \"Distancia\" }];\n}\nelse return null;\n\nlet now = Date.now();\nlet dt = (now - data.lastTime) / 1000.0;\ndata.lastTime = now;\n\nlet gz_deg = data.gz * (180 / Math.PI);\nif (Math.abs(gz_deg) > 1.0) {\n    data.yaw += (gz_deg * dt);\n}\nif (data.yaw > 180) data.yaw -= 360;\nelse if (data.yaw < -180) data.yaw += 360;\n\nlet rawPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\nlet rawRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n\nlet finalPitch = rawPitch - data.offsetPitch;\nlet finalRoll = rawRoll - data.offsetRoll;\n\ncontext.set('data', data);\n\nreturn [\n    { payload: finalPitch.toFixed(2), topic: \"Cabeceo\" },\n    { payload: finalRoll.toFixed(2), topic: \"Alabeo\" },\n    { payload: data.yaw.toFixed(2), topic: \"Guiñada\" },\n    null\n];",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "txt_pitch"
+            ],
+            [
+                "txt_roll"
+            ],
+            [
+                "txt_yaw"
+            ],
+            [
+                "txt_distancia"
+            ]
+        ]
+    },
+    {
+        "id": "ui_horizonte_nuevo",
+        "type": "ui_template",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "name": "Horizonte Artificial (Lee Datos)",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; background: #2c3e50; padding: 20px; border-radius: 10px;\">\n    <div style=\"position: relative; width: 200px; height: 200px; border-radius: 50%; border: 4px solid #bdc3c7; overflow: hidden; background: #3498db; box-shadow: inset 0px 0px 15px rgba(0,0,0,0.6);\">\n        \n        <div id=\"capa-horizonte\" style=\"position: absolute; width: 300px; height: 600px; left: -50px; top: -200px; transition: transform 0.1s linear;\">\n            <div style=\"width: 100%; height: 50%; background: #3498db;\"></div>\n            <div style=\"width: 100%; border-top: 3px solid white; height: 50%; background: #8d6e63;\"></div>\n        </div>\n\n        <div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; width: 100%; height: 100%; pointer-events: none;\">\n            <div style=\"position: absolute; top: 50%; left: 20px; width: 60px; height: 4px; background: #f1c40f; border-radius: 2px;\"></div>\n            <div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #f1c40f; border-radius: 50%;\"></div>\n            <div style=\"position: absolute; top: 50%; right: 20px; width: 60px; height: 4px; background: #f1c40f; border-radius: 2px;\"></div>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // El simulador guarda su propio estado internamente\n        scope.currentPitch = 0;\n        scope.currentRoll = 0;\n\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.topic) {\n                // Atrapa el número que va hacia la pantalla de texto\n                if (msg.topic === \"Cabeceo\") {\n                    scope.currentPitch = parseFloat(msg.payload) || 0;\n                } else if (msg.topic === \"Alabeo\") {\n                    scope.currentRoll = parseFloat(msg.payload) || 0;\n                }\n\n                var horiz = document.getElementById('capa-horizonte');\n                if (horiz) {\n                    var p = scope.currentPitch;\n                    var r = scope.currentRoll;\n                    \n                    if(p > 45) p = 45;\n                    if(p < -45) p = -45;\n                    \n                    horiz.style.transform = \"rotate(\" + r + \"deg) translateY(\" + (p * 1.5) + \"px)\";\n                }\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 800,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57f4bb5225a4be11",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.64",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "grupo_numeros",
+        "type": "ui_group",
+        "name": "Telemetría en Tiempo Real",
+        "tab": "tab_limpia",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab_limpia",
+        "type": "ui_tab",
+        "name": "Telemetría La Guardia",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "45d61f8ff410e73c",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

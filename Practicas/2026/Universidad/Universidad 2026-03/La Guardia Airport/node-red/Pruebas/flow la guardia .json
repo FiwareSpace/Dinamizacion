@@ -1,0 +1,207 @@
+[
+    {
+        "id": "4d747895866d9b09",
+        "type": "tab",
+        "label": "Flujo 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mqtt_entrada_limpia",
+        "type": "mqtt in",
+        "z": "4d747895866d9b09",
+        "name": "MQTT La Guardia",
+        "topic": "la_guardia/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "57f4bb5225a4be11",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "fn_matematicas_limpias"
+            ]
+        ]
+    },
+    {
+        "id": "btn_calibrar_limpio",
+        "type": "ui_button",
+        "z": "4d747895866d9b09",
+        "name": "",
+        "group": "grupo_numeros",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "🎯 TARA (Poner a 0)",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#d32f2f",
+        "className": "",
+        "icon": "",
+        "payload": "calibrar",
+        "payloadType": "str",
+        "topic": "calibrar",
+        "topicType": "str",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "fn_matematicas_limpias"
+            ]
+        ]
+    },
+    {
+        "id": "fn_matematicas_limpias",
+        "type": "function",
+        "z": "4d747895866d9b09",
+        "name": "Cálculo y Filtro Numérico",
+        "func": "let data = context.get('data') || {\n    ax: 0, ay: 0, az: 9.81,\n    gz: 0,\n    yaw: 0,\n    dist: 0,\n    lastTime: Date.now(),\n    offsetPitch: 0,\n    offsetRoll: 0\n};\n\nif (msg.topic === \"calibrar\") {\n    let currentPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\n    let currentRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n    \n    data.offsetPitch = currentPitch;\n    data.offsetRoll = currentRoll;\n    data.yaw = 0;\n    \n    context.set('data', data);\n    \n    return [\n        { payload: \"0.00\" },\n        { payload: \"0.00\" },\n        { payload: \"0.00\" },\n        { payload: data.dist.toFixed(1) }\n    ];\n}\n\nlet p = parseFloat(msg.payload);\n\nif (msg.topic === \"la_guardia/aceleracion/x\") data.ax = p;\nelse if (msg.topic === \"la_guardia/aceleracion/y\") data.ay = p;\nelse if (msg.topic === \"la_guardia/aceleracion/z\") data.az = p;\nelse if (msg.topic === \"la_guardia/giroscopio/z\") data.gz = p;\nelse if (msg.topic === \"la_guardia/distancia\") {\n    data.dist = p;\n    context.set('data', data);\n    return [null, null, null, { payload: p.toFixed(1) }];\n}\nelse return null;\n\n// Guiñada (Yaw)\nlet now = Date.now();\nlet dt = (now - data.lastTime) / 1000.0;\ndata.lastTime = now;\n\nlet gz_deg = data.gz * (180 / Math.PI);\nif (Math.abs(gz_deg) > 1.0) {\n    data.yaw += (gz_deg * dt);\n}\nif (data.yaw > 180) data.yaw -= 360;\nelse if (data.yaw < -180) data.yaw += 360;\n\n// Cabeceo y Alabeo (Pitch & Roll)\nlet rawPitch = Math.atan2(data.ax, Math.sqrt(data.ay*data.ay + data.az*data.az)) * (180 / Math.PI);\nlet rawRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n\nlet finalPitch = rawPitch - data.offsetPitch;\nlet finalRoll = rawRoll - data.offsetRoll;\n\ncontext.set('data', data);\n\nreturn [\n    { payload: finalPitch.toFixed(2) },\n    { payload: finalRoll.toFixed(2) },\n    { payload: data.yaw.toFixed(2) },\n    null\n];",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "txt_pitch"
+            ],
+            [
+                "txt_roll"
+            ],
+            [
+                "txt_yaw"
+            ],
+            [
+                "txt_distancia"
+            ]
+        ]
+    },
+    {
+        "id": "txt_pitch",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Cabeceo (Pitch):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "txt_roll",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alabeo (Roll):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "txt_yaw",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Guiñada (Yaw):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 770,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "txt_distancia",
+        "type": "ui_text",
+        "z": "4d747895866d9b09",
+        "group": "grupo_numeros",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Distancia HC-SR04:",
+        "format": "{{msg.payload}} cm",
+        "layout": "row-spread",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "57f4bb5225a4be11",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.64",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "grupo_numeros",
+        "type": "ui_group",
+        "name": "Telemetría en Tiempo Real",
+        "tab": "tab_limpia",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab_limpia",
+        "type": "ui_tab",
+        "name": "Telemetría La Guardia",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "1cd288f7c670242e",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

@@ -1,0 +1,340 @@
+[
+    {
+        "id": "2976dcbb6c94ca5e",
+        "type": "tab",
+        "label": "Flujo 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8308a36070191dc1",
+        "type": "mqtt in",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "topic": "alerta",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "57f4bb5225a4be11",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "441db4f739a18cbc",
+                "a51d03ce887c5baa",
+                "233d5d59b5e621c8"
+            ]
+        ]
+    },
+    {
+        "id": "441db4f739a18cbc",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 560,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a51d03ce887c5baa",
+        "type": "json",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "c385e1f9652dbea0",
+                "e12e46e8fa029450"
+            ]
+        ]
+    },
+    {
+        "id": "7f1b31c2f73ba8fb",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c385e1f9652dbea0",
+        "type": "function",
+        "z": "2976dcbb6c94ca5e",
+        "name": "function 5",
+        "func": "msg.payload=msg.payload.nombre;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "7f1b31c2f73ba8fb",
+                "359010a81b117369"
+            ]
+        ]
+    },
+    {
+        "id": "e12e46e8fa029450",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 580,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "233d5d59b5e621c8",
+        "type": "function",
+        "z": "2976dcbb6c94ca5e",
+        "name": "function 6",
+        "func": "//msg.cliente=msg.payload.cliente;\nreturn msg.cliente;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "a752776cf50b958b"
+            ]
+        ]
+    },
+    {
+        "id": "a752776cf50b958b",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 560,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "359010a81b117369",
+        "type": "switch",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Jorge",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "Jorge",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "4c3c2b82708f0c21"
+            ],
+            [
+                "b83202d08fd0080d"
+            ]
+        ]
+    },
+    {
+        "id": "5c229461f560b928",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e4da889c133585a5",
+        "type": "debug",
+        "z": "2976dcbb6c94ca5e",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c91635e9955f73a1",
+        "type": "ui_audio",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "group": "8948606c65f3c1f9",
+        "voice": "Microsoft Helena - Spanish (Spain)",
+        "always": true,
+        "x": 1120,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4c3c2b82708f0c21",
+        "type": "template",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Hola {{payload}} !",
+        "output": "str",
+        "x": 980,
+        "y": 200,
+        "wires": [
+            [
+                "c91635e9955f73a1",
+                "5c229461f560b928"
+            ]
+        ]
+    },
+    {
+        "id": "2e2bccba62dfa67d",
+        "type": "ui_audio",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "group": "8948606c65f3c1f9",
+        "voice": "Google UK English Male",
+        "always": true,
+        "x": 1120,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b83202d08fd0080d",
+        "type": "template",
+        "z": "2976dcbb6c94ca5e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "¡Tú no eres ni {{payload}} ni ná!",
+        "output": "str",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "2e2bccba62dfa67d",
+                "e4da889c133585a5"
+            ]
+        ]
+    },
+    {
+        "id": "57f4bb5225a4be11",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.64",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8948606c65f3c1f9",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "865ef7193ca633a6",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "865ef7193ca633a6",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

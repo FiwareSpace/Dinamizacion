@@ -1,0 +1,427 @@
+[
+    {
+        "id": "4c988ad9cf79fae0",
+        "type": "tab",
+        "label": "Flujo 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mqtt_receptor",
+        "type": "mqtt in",
+        "z": "4c988ad9cf79fae0",
+        "name": "Receptor Telemetría",
+        "topic": "la_guardia/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "nodo_switch"
+            ]
+        ]
+    },
+    {
+        "id": "nodo_switch",
+        "type": "switch",
+        "z": "4c988ad9cf79fae0",
+        "name": "Clasificador de Sensores",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "la_guardia/distancia",
+                "vt": "str"
+            },
+            {
+                "t": "regex",
+                "v": "la_guardia/aceleracion/.*",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "regex",
+                "v": "la_guardia/giroscopio/.*",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "debug_distancia"
+            ],
+            [
+                "debug_acel"
+            ],
+            [
+                "debug_giro"
+            ]
+        ]
+    },
+    {
+        "id": "debug_distancia",
+        "type": "debug",
+        "z": "4c988ad9cf79fae0",
+        "name": "Distancia (HC-SR04)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "debug_acel",
+        "type": "debug",
+        "z": "4c988ad9cf79fae0",
+        "name": "Aceleración (MPU6050)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "debug_giro",
+        "type": "debug",
+        "z": "4c988ad9cf79fae0",
+        "name": "Giroscopio (MPU6050)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "switch_dashboard",
+        "type": "switch",
+        "z": "4c988ad9cf79fae0",
+        "name": "Separador Exacto",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "la_guardia/distancia",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/aceleracion/x",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/aceleracion/y",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/aceleracion/z",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/giroscopio/x",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/giroscopio/y",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "la_guardia/giroscopio/z",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "ui_distancia"
+            ],
+            [
+                "ui_acel_x"
+            ],
+            [
+                "ui_acel_y"
+            ],
+            [
+                "ui_acel_z"
+            ],
+            [
+                "ui_giro_x"
+            ],
+            [
+                "ui_giro_y"
+            ],
+            [
+                "ui_giro_z"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_entrada",
+        "type": "mqtt in",
+        "z": "4c988ad9cf79fae0",
+        "name": "MQTT La Guardia",
+        "topic": "la_guardia/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "broker_local",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 240,
+        "y": 560,
+        "wires": [
+            [
+                "switch_dashboard"
+            ]
+        ]
+    },
+    {
+        "id": "ui_distancia",
+        "type": "ui_gauge",
+        "z": "4c988ad9cf79fae0",
+        "name": "",
+        "group": "grupo_ultrasonido",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Distancia Actual",
+        "label": "cm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "100",
+        "seg2": "300",
+        "x": 720,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ui_acel_x",
+        "type": "ui_text",
+        "z": "4c988ad9cf79fae0",
+        "group": "grupo_aceleracion",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Eje X:",
+        "format": "{{msg.payload}} m/s²",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ui_acel_y",
+        "type": "ui_text",
+        "z": "4c988ad9cf79fae0",
+        "group": "grupo_aceleracion",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Eje Y:",
+        "format": "{{msg.payload}} m/s²",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ui_acel_z",
+        "type": "ui_text",
+        "z": "4c988ad9cf79fae0",
+        "group": "grupo_aceleracion",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Eje Z:",
+        "format": "{{msg.payload}} m/s²",
+        "layout": "row-spread",
+        "x": 710,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ui_giro_x",
+        "type": "ui_chart",
+        "z": "4c988ad9cf79fae0",
+        "name": "",
+        "group": "grupo_giroscopio",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Rotación X",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "outputs": 1,
+        "x": 730,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_giro_y",
+        "type": "ui_chart",
+        "z": "4c988ad9cf79fae0",
+        "name": "",
+        "group": "grupo_giroscopio",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Rotación Y",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "outputs": 1,
+        "x": 730,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_giro_z",
+        "type": "ui_chart",
+        "z": "4c988ad9cf79fae0",
+        "name": "",
+        "group": "grupo_giroscopio",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Rotación Z",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "outputs": 1,
+        "x": 730,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "broker_local",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Local",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true
+    },
+    {
+        "id": "grupo_ultrasonido",
+        "type": "ui_group",
+        "name": "Ultrasonido (HC-SR04)",
+        "tab": "tab_la_guardia",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "grupo_aceleracion",
+        "type": "ui_group",
+        "name": "Acelerómetro (MPU6050)",
+        "tab": "tab_la_guardia",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "grupo_giroscopio",
+        "type": "ui_group",
+        "name": "Giroscopio (Gráficas en tiempo real)",
+        "tab": "tab_la_guardia",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab_la_guardia",
+        "type": "ui_tab",
+        "name": "Panel La Guardia",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "75023ceb3bb293b3",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
