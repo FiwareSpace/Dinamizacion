@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="245mm"
+   height="245mm"
+   viewBox="0 0 245 245"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="OLIVENZA.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.48693448"
+     inkscape:cx="336.80096"
+     inkscape:cy="557.56988"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect26"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="0"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect24"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect14"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="round"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect11"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="miter"
+       unit="mm"
+       offset="0"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <inkscape:path-effect
+       effect="offset"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1.3"
+       linejoin_type="round"
+       unit="mm"
+       offset="-0.2"
+       miter_limit="4"
+       attempt_force_join="false"
+       update_on_knot_move="true" />
+    <clipPath
+       id="SVG_CP_1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-14">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-3">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1-2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2-2">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3-6">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4-5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5-6">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6-8">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6-9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7-2">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8-9">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path9-3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath10">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path10"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath11">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path11"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-13">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-7">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-79"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-8">
+      <path
+         d="M 0.16210937,0.16210937 V 413.10156 H 777.58008 V 0.16210937 Z"
+         id="path1877-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2-28">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3-0">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3-2"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5-65">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6-9">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7-0">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8-1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8-3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-0">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-66"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2-9"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3-63">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4-8">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4-82"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5-9">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5-13"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6-5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6-98"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7-0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8-7">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1877-20"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-9">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2-3">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3-2">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4-0">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5-657">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7-20">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7-01"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8-60"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9-7">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path9-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="SVG_CP_1-48">
+      <path
+         d="M 0.16210937,0.16210937 V 413.10156 H 777.58008 V 0.16210937 Z"
+         id="path1877-82"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath1-4">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path1-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath2-5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path2-17"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3-1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path3-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4-52">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path4-76"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5-1">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path5-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6-2">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path6-3"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7-22">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path7-1"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8-6">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path8-8"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9-5">
+      <path
+         d="M 0,0 V 413.26299 H 777.74173 V 0 Z"
+         id="path9-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <g
+     id="g1">
+    <path
+       id="path3645"
+       clip-path="url(#SVG_CP_1-48)"
+       style="display:inline;fill:#ff00ff;stroke:none;stroke-width:0.428351;stroke-linecap:square;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="M 166.49408 178.80879 L 165.8653 179.2285 L 164.93573 178.9962 L 163.77346 180.3888 L 158.27158 182.54088 L 155.8809 186.84191 L 153.92764 188.30853 L 150.76368 190.25588 L 148.61317 190.25588 L 145.60946 192.56821 L 145.8457 194.45296 L 143.66802 197.83779 L 142.96483 201.12104 L 143.44714 202.56837 L 142.47858 206.19337 L 142.47858 209.54867 L 141.76161 214.08003 L 142.44905 216.14274 L 143.29477 216.56245 L 145.23621 216.07817 L 146.57408 217.15027 L 146.30084 218.51767 L 144.59957 219.49213 L 143.5058 221.67966 L 144.04678 221.86116 L 143.99599 222.17772 L 143.45108 222.17772 L 143.38493 222.11315 L 142.95499 224.69124 L 142.45496 226.44134 L 141.24032 227.17012 L 140.27728 229.09778 L 139.70126 229.38677 L 138.54293 229.15605 L 137.91416 229.99626 L 137.67596 232.14638 L 136.44912 234.35162 L 134.31829 236.72064 L 134.31829 241.01576 L 133.57022 242.51191 L 132.35165 243.73245 L 131.67366 244.41004 L 131.19528 248.70319 L 130.47083 250.14855 L 129.76961 252.95894 L 129.95899 253.33613 L 130.79684 253.75584 L 131.17402 253.56842 L 132.39259 252.10535 L 134.24033 251.84195 L 135.05849 253.20305 L 134.54704 254.47871 L 133.80488 256.21109 L 132.05675 257.20918 L 131.19922 257.42375 L 131.19922 258.52145 L 130.69132 260.30068 L 127.55847 261.50587 L 126.75961 263.30282 L 127.75375 262.55868 L 127.80061 262.41616 L 130.44327 262.41616 L 130.68344 263.37684 L 131.36931 263.37684 L 132.06817 264.54304 L 132.80679 264.29697 L 133.53124 265.98643 L 134.23443 265.81044 L 134.23443 265.19741 L 135.15219 265.65216 L 134.82225 265.98249 L 134.97266 266.42976 L 135.42977 266.19904 L 135.66994 266.68174 L 136.1932 266.41795 L 136.43927 267.64636 L 137.19916 267.39438 L 137.19916 268.79288 L 138.38859 272.84193 L 139.33983 274.98063 L 142.92388 280.4766 L 146.04492 283.83978 L 148.19543 287.18563 L 149.15021 287.90221 L 151.09953 290.33777 L 153.26185 295.86918 L 153.26382 295.87312 L 153.26776 295.88296 L 154.9336 299.21307 L 156.82622 301.81439 L 157.38098 302.09197 L 157.17585 303.11919 L 158.16409 302.72271 L 158.95508 303.11919 L 158.95508 302.19512 L 159.82403 302.48451 L 160.34768 302.22268 L 160.83589 302.70893 L 161.90249 302.28331 L 164.56445 299.37882 L 165.16409 299.37882 L 165.67396 299.71861 L 165.67396 299.49812 L 166.73228 297.64841 L 167.45516 298.00788 L 167.29294 298.99416 L 168.63869 297.42202 L 168.63869 299.20125 L 168.92177 299.34378 L 169.39857 298.86738 L 171.09748 299.59773 L 171.95501 299.02723 L 172.20109 300.49818 L 172.45701 300.36904 L 173.1913 299.63474 L 174.39845 299.33394 L 174.39845 300.52534 L 173.78897 300.21863 L 173.72834 300.27927 L 174.76776 301.73447 L 175.03313 301.60139 L 175.03313 300.67771 L 175.87097 301.23641 L 176.77142 299.88476 L 176.85174 299.85956 L 177.63879 299.59576 L 178.22858 300.18359 L 177.37696 300.18359 L 177.47658 300.37888 L 178.28331 300.78323 L 178.57427 300.49227 L 179.33022 301.50178 L 180.71297 300.90804 L 180.2031 300.14265 L 181.67366 299.89657 L 181.21694 298.98825 L 181.75398 298.72052 L 181.75398 298.16813 L 180.99803 297.41218 L 181.34569 296.71687 L 182.51544 296.94916 L 182.72844 296.09557 L 183.51549 295.31049 L 184.63288 295.08607 L 184.63288 293.48047 L 186.3751 291.4902 L 187.79486 290.77914 L 188.2189 289.93539 L 187.48224 288.2227 L 188.23425 287.47069 L 188.23425 286.61119 L 189.19336 286.85175 L 189.19336 286.51355 L 189.6737 286.03124 L 189.6737 285.73634 L 188.86145 285.46467 L 189.43353 284.61147 L 189.43353 283.87285 L 190.3887 282.91807 L 190.67179 283.77718 L 191.11315 283.77718 L 191.11315 282.92949 L 191.68366 282.07433 L 192.61717 282.30859 L 193.0861 281.13687 L 193.90622 281.13687 L 195.48229 280.91206 L 196.18942 279.2596 L 197.00009 278.85564 L 196.84182 278.69737 L 197.64855 276.81656 L 198.12693 276.81656 L 198.55451 275.74209 L 198.80846 273.21675 L 199.51362 273.21675 L 199.51362 271.89463 L 200.26169 270.6485 L 201.73618 268.67949 L 203.11342 268.22081 L 203.11342 265.41002 L 203.57998 264.7088 L 203.11736 262.85752 L 202.63072 261.15624 L 202.89254 257.22847 L 204.03513 258.08403 L 205.11511 257.86709 L 205.90058 257.082 L 206.88686 257.82417 L 209.02359 256.63867 L 210.22051 257.11704 L 211.39065 256.41582 L 211.86705 256.41582 L 212.58599 255.93548 L 214.69516 255.93548 L 214.9377 257.63676 L 216.3299 257.86905 L 218.92965 261.6484 L 219.83403 261.19522 L 221.21875 261.88857 L 221.64633 261.24798 L 224.01182 260.19714 L 224.5272 261.74407 L 224.91226 261.93542 L 225.7127 261.93542 L 226.19934 263.40243 L 226.98442 263.59772 L 227.59391 262.9902 L 227.59391 262.49214 L 229.14635 261.45508 L 230.06845 261.45508 L 231.07048 259.95303 L 231.84571 260.47077 L 232.30283 260.24202 L 234.21868 260.88103 L 233.12886 257.61117 L 232.40834 256.65245 L 231.19725 252.77743 L 230.71101 250.34777 L 230.94921 247.01964 L 230.57793 246.46685 L 229.99207 246.75781 L 229.99207 245.63688 L 227.74431 244.51162 L 227.02537 244.74983 L 223.80275 243.26352 L 221.99793 240.42754 L 226.18556 238.45893 L 228.07818 233.25195 L 228.59554 231.43964 L 231.0252 231.68375 L 232.19928 229.56828 L 237.33775 227.3654 L 238.39253 227.57605 L 238.39253 227.13271 L 239.43747 227.13271 L 239.43747 227.34769 L 240.87692 227.14256 L 241.03717 226.98034 L 241.28718 224.49399 L 243.27745 224.49399 L 244.90234 222.6368 L 245.73231 220.97647 L 245.11141 220.97647 L 245.11141 218.38105 L 246.79693 214.53123 L 247.98637 208.58208 L 247.29893 206.29298 L 245.61931 205.57208 L 245.10747 203.77946 L 245.55868 201.51949 L 243.03728 201.31042 L 243.03728 207.48832 L 240.30484 208.4805 L 235.73451 211.36728 L 233.34383 211.84762 L 232.41976 212.539 L 232.41228 212.5449 L 231.75004 213.20911 L 231.74847 213.2225 L 231.42837 213.15163 L 231.42955 213.1406 L 230.49997 208.95297 L 228.32229 208.51751 L 228.09196 208.9825 L 223.49998 208.74036 L 222.8712 209.36914 L 222.633 211.74801 L 220.7266 214.84582 L 221.203 216.98648 L 220.26161 219.57245 L 220.74432 220.05476 L 216.63661 230.6896 L 216.63661 231.08608 L 217.00986 231.64635 L 218.13079 231.08411 L 217.60359 234.00396 L 218.54301 236.82616 L 219.12887 237.70298 L 218.10952 238.04316 L 217.60753 237.53919 L 215.77947 237.53919 L 214.07033 238.02741 L 213.22658 237.7459 L 212.98247 237.00964 L 212.11707 236.57812 L 211.14654 236.57812 L 210.45123 236.1151 L 208.87319 236.64072 L 208.87319 236.01746 L 208.04086 235.39459 L 206.34785 235.8769 L 205.82814 235.35955 L 204.36703 234.87094 L 203.66424 233.69922 L 203.1209 233.69922 L 202.57993 234.50989 L 202.07439 234.00593 L 201.9043 234.17759 L 201.30663 234.17759 L 200.49792 233.64055 L 200.01955 232.19913 L 199.27345 231.70108 L 199.27345 230.77347 L 201.00386 230.27934 L 201.39049 229.50568 L 200.57824 228.89856 L 199.57622 228.89856 L 199.07816 227.90441 L 197.88872 227.42761 L 197.39854 226.69332 L 196.76189 226.26967 L 195.37481 226.54489 L 195.88271 224.51761 L 193.96292 223.7967 L 194.14442 223.06832 L 193.52746 224.09751 L 192.88884 224.09751 L 191.336 222.54703 L 191.56042 221.64855 L 189.8808 221.16782 L 190.14853 220.09571 L 189.6993 218.30073 L 189.02721 218.07828 L 188.67168 217.72275 L 189.68355 215.95493 L 189.68552 215.95099 L 189.72961 215.79705 L 190.02963 215.94942 L 190.0253 215.96281 L 192.83018 218.29876 L 195.13857 221.06821 L 196.35163 220.09768 L 197.36114 221.61312 L 197.71864 221.61312 L 198.58994 221.17766 L 199.30455 219.50788 L 200.10735 218.97281 L 201.44719 218.97281 L 202.14447 220.13863 L 204.53909 219.26771 L 204.30679 217.418 L 205.56631 215.40254 L 209.2988 214.00207 L 208.63459 212.45513 L 208.39442 209.80066 L 207.20892 206.00793 L 206.46872 205.02362 L 206.72661 201.41791 L 208.48065 201.7695 L 202.98625 198.17561 L 200.07034 198.17561 L 199.59945 197.47084 L 198.27536 197.69133 L 196.16619 198.39451 L 193.76566 200.79504 L 191.14071 201.74824 L 190.07609 203.34754 L 188.99217 201.72068 L 187.52359 200.2521 L 187.27948 198.78115 L 184.67579 192.63278 L 183.72062 192.39261 L 182.756 190.22477 L 181.2949 189.73813 L 181.05473 188.53728 L 180.4354 188.33215 L 178.56837 188.09749 L 177.34586 188.34199 L 176.53715 188.07229 L 175.80286 187.09389 L 173.40824 185.65838 L 172.20502 184.21302 L 170.75179 183.24407 L 170.53722 182.81452 L 168.61703 182.81452 L 167.41618 180.414 L 165.78892 180.414 L 166.61338 179.04502 L 166.49408 178.80879 z "
+       transform="matrix(1.312509,0,0,1.312509,-136.0034,-200.38998)" />
+  </g>
+  <rect
+     style="fill:#800080;stroke-width:0.362"
+     id="rect3"
+     width="14.600258"
+     height="12.679172"
+     x="22.284605"
+     y="28.047865" />
+</svg>
