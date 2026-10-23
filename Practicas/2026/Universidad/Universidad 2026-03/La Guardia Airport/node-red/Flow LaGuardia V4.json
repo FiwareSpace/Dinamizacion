@@ -1,0 +1,298 @@
+[
+    {
+        "id": "94ea58a2954ccfe2",
+        "type": "tab",
+        "label": "Flujo la guardia V4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "92c840d84897a470",
+        "type": "mqtt in",
+        "z": "94ea58a2954ccfe2",
+        "name": "MQTT La Guardia",
+        "topic": "la_guardia/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "57f4bb5225a4be11",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "fn_matematicas_limpias_v2"
+            ]
+        ]
+    },
+    {
+        "id": "b5b6c274aa4aa095",
+        "type": "ui_button",
+        "z": "94ea58a2954ccfe2",
+        "name": "",
+        "group": "28280990cd0f3562",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "🎯Poner a 0🎯",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#d32f2f",
+        "className": "",
+        "icon": "",
+        "payload": "calibrar",
+        "payloadType": "str",
+        "topic": "calibrar",
+        "topicType": "str",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "fn_matematicas_limpias_v2"
+            ]
+        ]
+    },
+    {
+        "id": "f6ae551fd398e825",
+        "type": "ui_text",
+        "z": "94ea58a2954ccfe2",
+        "group": "28280990cd0f3562",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Cabeceo (Pitch):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1150,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e2c17687240d20a0",
+        "type": "ui_text",
+        "z": "94ea58a2954ccfe2",
+        "group": "28280990cd0f3562",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alabeo (Roll):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "efba6ee013b5097d",
+        "type": "ui_text",
+        "z": "94ea58a2954ccfe2",
+        "group": "28280990cd0f3562",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Guiñada (Yaw):",
+        "format": "{{msg.payload}} °",
+        "layout": "row-spread",
+        "x": 1140,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1d0df2b1e8b25849",
+        "type": "ui_text",
+        "z": "94ea58a2954ccfe2",
+        "group": "28280990cd0f3562",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Distancia HC-SR04:",
+        "format": "{{msg.payload}}0 feet",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1160,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "bbe59e432ef47b4c",
+        "type": "ui_template",
+        "z": "94ea58a2954ccfe2",
+        "group": "28280990cd0f3562",
+        "name": "Horizonte Artificial (Lee Datos)",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; background: #2c3e50; padding: 20px; border-radius: 10px;\">\n    <div style=\"position: relative; width: 200px; height: 200px; border-radius: 50%; border: 4px solid #bdc3c7; overflow: hidden; background: #3498db; box-shadow: inset 0px 0px 15px rgba(0,0,0,0.6);\">\n        \n        <div id=\"capa-horizonte\" style=\"position: absolute; width: 300px; height: 600px; left: -50px; top: -200px; transition: transform 0.1s linear;\">\n            <div style=\"width: 100%; height: 50%; background: #3498db;\"></div>\n            <div style=\"width: 100%; border-top: 3px solid white; height: 50%; background: #8d6e63;\"></div>\n        </div>\n\n        <div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; width: 100%; height: 100%; pointer-events: none;\">\n            <div style=\"position: absolute; top: 50%; left: 20px; width: 60px; height: 4px; background: #f1c40f; border-radius: 2px;\"></div>\n            <div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; background: #f1c40f; border-radius: 50%;\"></div>\n            <div style=\"position: absolute; top: 50%; right: 20px; width: 60px; height: 4px; background: #f1c40f; border-radius: 2px;\"></div>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // El simulador guarda su propio estado internamente\n        scope.currentPitch = 0;\n        scope.currentRoll = 0;\n\n        scope.$watch('msg', function(msg) {\n            if (msg && msg.topic) {\n                // Atrapa el número que va hacia la pantalla de texto\n                if (msg.topic === \"Cabeceo\") {\n                    scope.currentPitch = parseFloat(msg.payload) || 0;\n                } else if (msg.topic === \"Alabeo\") {\n                    scope.currentRoll = parseFloat(msg.payload) || 0;\n                }\n\n                var horiz = document.getElementById('capa-horizonte');\n                if (horiz) {\n                    var p = scope.currentPitch;\n                    var r = scope.currentRoll;\n                    \n                    if(p > 45) p = 45;\n                    if(p < -45) p = -45;\n                    \n                    horiz.style.transform = \"rotate(\" + r + \"deg) translateY(\" + (p * 1.5) + \"px)\";\n                }\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1430,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fn_matematicas_limpias_v2",
+        "type": "function",
+        "z": "94ea58a2954ccfe2",
+        "name": "Cálculo Numérico (4 salidas)",
+        "func": "let data = context.get('data') || {\n    ax: 0, ay: 0, az: 9.81,\n    gz: 0,\n    yaw: 0,\n    dist: 0,\n    lastTime: Date.now(),\n    offsetPitch: 0,\n    offsetRoll: 0\n};\n\n// --- BOTÓN TARA ---\nif (msg.topic === \"calibrar\") {\n    let currentPitch = Math.atan2(data.ax, Math.sqrt(data.ay * data.ay + data.az * data.az)) * (180 / Math.PI);\n    let currentRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n\n    data.offsetPitch = currentPitch;\n    data.offsetRoll = currentRoll;\n    data.yaw = 0;\n\n    context.set('data', data);\n\n    return [\n        { payload: \"0.00\", topic: \"Cabeceo\" },\n        { payload: \"0.00\", topic: \"Alabeo\" },\n        { payload: \"0.00\", topic: \"Guiñada\" },\n        { payload: data.dist.toFixed(1), topic: \"Distancia\" }\n    ];\n}\n\n// --- RECEPCIÓN DE DATOS ---\nlet p = parseFloat(msg.payload);\n\nif (msg.topic === \"la_guardia/aceleracion/x\") data.ax = p;\nelse if (msg.topic === \"la_guardia/aceleracion/y\") data.ay = p;\nelse if (msg.topic === \"la_guardia/aceleracion/z\") data.az = p;\nelse if (msg.topic === \"la_guardia/giroscopio/z\") data.gz = p;\nelse if (msg.topic === \"la_guardia/distancia\") {\n    data.dist = p;\n    context.set('data', data);\n    return [null, null, null, { payload: p.toFixed(1), topic: \"Distancia\" }];\n}\nelse return null;\n\n// --- GUIÑADA (Yaw) ---\nlet now = Date.now();\nlet dt = (now - data.lastTime) / 1000.0;\ndata.lastTime = now;\n\nlet gz_deg = data.gz * (180 / Math.PI);\nif (Math.abs(gz_deg) > 1.0) {\n    data.yaw += (gz_deg * dt);\n}\nif (data.yaw > 180) data.yaw -= 360;\nelse if (data.yaw < -180) data.yaw += 360;\n\n// --- CABECEO Y ALABEO ---\nlet rawPitch = Math.atan2(data.ax, Math.sqrt(data.ay * data.ay + data.az * data.az)) * (180 / Math.PI);\nlet rawRoll = Math.atan2(data.ay, data.az) * (180 / Math.PI);\n\nlet finalPitch = rawPitch - data.offsetPitch;\nlet finalRoll = rawRoll - data.offsetRoll;\n\n// NUEVO: Normalizador para evitar el salto a -300º\nif (finalPitch > 180) finalPitch -= 360;\nelse if (finalPitch < -180) finalPitch += 360;\n\nif (finalRoll > 180) finalRoll -= 360;\nelse if (finalRoll < -180) finalRoll += 360;\n\ncontext.set('data', data);\n\nreturn [\n    { payload: finalPitch.toFixed(2), topic: \"Cabeceo\" },\n    { payload: finalRoll.toFixed(2), topic: \"Alabeo\" },\n    { payload: data.yaw.toFixed(2), topic: \"Guiñada\" },\n    null\n];",
+        "outputs": 4,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 220,
+        "wires": [
+            [
+                "f6ae551fd398e825",
+                "bbe59e432ef47b4c"
+            ],
+            [
+                "e2c17687240d20a0",
+                "bbe59e432ef47b4c",
+                "fn_bank_angle"
+            ],
+            [
+                "efba6ee013b5097d"
+            ],
+            [
+                "1d0df2b1e8b25849",
+                "fn_alertas_voz"
+            ]
+        ]
+    },
+    {
+        "id": "fn_alertas_voz",
+        "type": "function",
+        "z": "94ea58a2954ccfe2",
+        "name": "Controlador de Altitud (Voz)",
+        "func": "let dist = parseFloat(msg.payload);\nlet lastMsg = context.get('lastMsg') || \"\";\nlet newMsg = \"\";\n\n// Comprobamos los rangos de altitud\nif (dist >= 8 && dist <= 12) newMsg = \"10\";\nelse if (dist >= 19 && dist <= 21) newMsg = \"20\";\nelse if (dist >= 49 && dist <= 51) newMsg = \"50\";\nelse if (dist >= 99 && dist <= 101) newMsg = \"100\";\nelse if (dist >= 149 && dist <= 151) newMsg = \"150\";\nelse if (dist >= 199 && dist <= 201) newMsg = \"200\";\n\n// Filtro Anti-Spam: Solo habla si es un mensaje nuevo\nif (newMsg !== \"\" && newMsg !== lastMsg) {\n    context.set('lastMsg', newMsg);\n    return { payload: newMsg };\n} else if (newMsg === \"\") {\n    // Si sale a una zona muerta (ej. 7 cm), reseteamos para que pueda volver a hablar\n    context.set('lastMsg', \"\");\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 580,
+        "wires": [
+            [
+                "nodo_altavoz"
+            ]
+        ]
+    },
+    {
+        "id": "nodo_altavoz",
+        "type": "ui_audio",
+        "z": "94ea58a2954ccfe2",
+        "name": "Altavoz Cabina",
+        "group": "663025af30f216be",
+        "voice": "Google US English",
+        "always": true,
+        "x": 1300,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "fn_bank_angle",
+        "type": "function",
+        "z": "94ea58a2954ccfe2",
+        "name": "Alerta Bank Angle",
+        "func": "const ANGULO_CRITICO = 45; // Grados críticos (cámbialo si quieres)\nconst MUESTRAS = 10;       // Memoria de los últimos 10 valores\nconst MAYORIA = 6;         // Cuántos deben fallar para pitar\n\nlet history = context.get('history') || [];\nlet isWarningActive = context.get('isWarningActive') || false;\n\n// Leer el ángulo que entra\nlet angulo = parseFloat(msg.payload);\nif (isNaN(angulo)) return null;\n\n// Actualizar el historial de los últimos 10 valores\nhistory.push(angulo);\nif (history.length > MUESTRAS) {\n    history.shift();\n}\ncontext.set('history', history);\n\n// Contar cuántos valores superan el ángulo crítico (en positivo o negativo)\nlet countCritical = 0;\nfor (let i = 0; i < history.length; i++) {\n    if (Math.abs(history[i]) >= ANGULO_CRITICO) {\n        countCritical++;\n    }\n}\n\n// Lógica de disparo y filtro anti-spam\nif (countCritical >= MAYORIA && !isWarningActive) {\n    context.set('isWarningActive', true);\n    return { payload: \"Bank angle, bank angle\" };\n} else if (countCritical < MAYORIA && isWarningActive) {\n    // Si el avión se endereza, rearmamos la alarma\n    context.set('isWarningActive', false);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 520,
+        "wires": [
+            [
+                "nodo_altavoz"
+            ]
+        ]
+    },
+    {
+        "id": "57f4bb5225a4be11",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.64",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "28280990cd0f3562",
+        "type": "ui_group",
+        "name": "Telemetría en Tiempo Real",
+        "tab": "fe3ac99e12f3a0d7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "663025af30f216be",
+        "type": "ui_group",
+        "name": "Telemetría en Tiempo Real",
+        "tab": "cc2b6997a293e927",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe3ac99e12f3a0d7",
+        "type": "ui_tab",
+        "name": "Telemetría La Guardia",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "cc2b6997a293e927",
+        "type": "ui_tab",
+        "name": "Telemetría La Guardia",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
