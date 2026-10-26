@@ -1,6 +1,6 @@
 ### Descripción de las diferentes carpetas:
 
-- Diferentes versiones: versiones desechables de codigos anteriores [Ir a la sección de títulos](#Diferentes versiones)
+- Diferentes versiones: versiones desechables de codigos anteriores
 
 - Arduino_V4_conexionesWifManage.ino: codigo en C++ para la placa ESP32
 
