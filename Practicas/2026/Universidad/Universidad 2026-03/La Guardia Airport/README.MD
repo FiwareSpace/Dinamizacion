@@ -1,3 +1,6 @@
+## Mejora del dispositivo de alertas La Guardia Airport 
+### Implementación de telemetría en tiempo real y ordenador de cabina
+
 El proyecto estudia el accidente del vuelo AC8646 en LaGuardia (marzo de 2026), provocado por la colisión entre un avión y un vehículo de bomberos sin transpondedor, agravado por la falta de alertas del radar ASDE-X, la baja visibilidad y la carga de trabajo de los controladores.
 
 - Desarrollo Práctico: Aunque el diseño documental preveía sensorizar el pavimento de la pista con fotorresistencias, la ejecución técnica se ha centrado exclusivamente en la instrumentación del avión. Se ha construido un sistema de telemetría a bordo (ESP32, MPU6050 y HC-SR04) que transmite en tiempo real la altitud, el cabeceo, el alabeo y la guiñada de la maqueta.
