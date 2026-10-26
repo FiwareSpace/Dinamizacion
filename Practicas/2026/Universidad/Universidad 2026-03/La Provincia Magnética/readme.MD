@@ -4,8 +4,8 @@ La producción se ejecutó mediante impresión 3D en un equipo Bambu Lab, ajusta
 
 Descripción de las diferentes carpetas:
 
-Imagenes referencia: imagenes de mapas, monumentos, mancomunidades, usadas para el diseño
+- Imagenes referencia: imagenes de mapas, monumentos, mancomunidades, usadas para el diseño
 
-Mapa Provincial Mancomunidades: Modelo de las diferentes partes de la provincia directamente para su impresion
+- Mapa Provincial Mancomunidades: Modelo de las diferentes partes de la provincia directamente para su impresion
 
-Monumentos y CITLAB: Modelos 3D de CITLAB y monumentos
+- Monumentos y CITLAB: Modelos 3D de CITLAB y monumentos
